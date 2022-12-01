@@ -1,7 +1,14 @@
 import DefineRouter from 'src/pages/Router';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+
+const queryClient = new QueryClient();
 
 function App() {
-  return <DefineRouter />;
+  return (
+    <QueryClientProvider client={queryClient}>
+      <DefineRouter />
+    </QueryClientProvider>
+  );
 }
 
 export default App;
