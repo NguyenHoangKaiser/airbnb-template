@@ -3,9 +3,11 @@ dist/
 .prettierrc.js
 .yarn
 vite.config.ts
-tsconfig.json
+# tsconfig.json
 package.json
 yarn.lock
-README.md
+# README.md
 .gitignore
+postcss.config.js
+.husky/
 ```

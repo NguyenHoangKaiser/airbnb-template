@@ -5,3 +5,6 @@ dist/
 env.d.ts
 vite.config.ts
 commitlint.config.cjs
+postcss.config.cjs
+tailwind.config.cjs
+.husky/
