@@ -2,8 +2,8 @@ type Props = {
   name: string;
 };
 
-function newApp() {
-  return <div>new app</div>;
+function newApp({ name }: Props) {
+  return <div>{name}</div>;
 }
 
 export default newApp;

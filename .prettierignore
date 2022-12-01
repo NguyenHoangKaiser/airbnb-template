@@ -2,3 +2,10 @@ node_modules/
 dist/
 .prettierrc.js
 .yarn
+vite.config.ts
+tsconfig.json
+package.json
+yarn.lock
+README.md
+.gitignore
+```
