@@ -14,6 +14,8 @@ This template uses a number of open source projects to work properly:
 - [ReactJS] - With TypeScript
 - [Vite] - Replacement for Create React App
 - [TailwindCSS]
+- [react-router-dom] - React router dom
+- [tanstack-query] - React Query
 - [ESLint]
 - [Prettier]
 - [Husky] - Create git hooks easy
@@ -73,3 +75,5 @@ to discuss what you would like to change.
 [vite]: https://vitejs.dev/guide/
 [airbnb]: https://airbnb.io/javascript/react/
 [commit-convention]: https://www.conventionalcommits.org/en/v1.0.0/
+[react-router-dom]: https://reactrouter.com/en/main
+[tanstack-query]: https://tanstack.com/query/v4/docs/quick-start
