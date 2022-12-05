@@ -1,23 +1,21 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import RootLayout from 'src/pages/RootLayout';
-import ErrorPage from 'src/pages/ErrorPage';
-import HomePage from 'src/pages/HomePage';
-import NotePage from 'src/pages/NotePage';
+import {
+  createRoutesFromElements,
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+} from 'react-router-dom';
+import RootLayout from 'src/layout/RootLayout';
+import Pages from 'src/pages';
+import ErrorPage from 'src/pages/Boundaries/ErrorPage';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <RootLayout />,
-    errorElement: <ErrorPage />,
-    children: [
-      { index: true, element: <HomePage /> },
-      {
-        path: '/note',
-        element: <NotePage />,
-      },
-    ],
-  },
-]);
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<RootLayout />} errorElement={<ErrorPage />}>
+      <Route index element={Pages.HomePage} />
+      <Route path="/preview" element={Pages.PreviewPage} />
+    </Route>,
+  ),
+);
 
 function DefineRouter() {
   return <RouterProvider router={router} />;

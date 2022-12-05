@@ -20,7 +20,7 @@ function MainNavigation() {
           </li>
           <li>
             <NavLink
-              to="/note"
+              to="/preview"
               className={({ isActive }) =>
                 `text-lg no-underline hover:text-[#fcb66b] ${
                   isActive ? 'text-[#fcb66b]' : undefined
@@ -28,7 +28,7 @@ function MainNavigation() {
               }
               end
             >
-              Note
+              Preview
             </NavLink>
           </li>
         </ul>
