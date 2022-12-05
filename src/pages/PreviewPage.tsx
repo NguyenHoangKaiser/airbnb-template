@@ -1,4 +1,4 @@
-import { PreviewPane, Col } from 'src/components/Playground/PreviewPane';
+import { PreviewPane, Col } from 'src/Components/Playground/PreviewPane';
 import { Button as AntdButton } from 'antd';
 import { useTranslation, Trans } from 'react-i18next';
 
